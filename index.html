@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Sida Bar</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/pet.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <aside>
+      <header>
+        <img src="./assets/logo.svg" alt="Logo Veterinária" class="closed" />
+        <img src="./assets/menu.svg" alt="Menu" onclick="closed()" />
+      </header>
+
+      <main>
+        <form action="">
+          <img src="./assets/search.svg" alt="Lupa de pesquisa" />
+          <input type="text" placeholder="Buscar" class="closed" />
+        </form>
+        <div class="menu">
+          <div class="option">
+            <img src="./assets/grid.svg" alt="Ícone de dashboard" />
+            <span class="closed">Dashboard</span>
+          </div>
+          <div class="option">
+            <img src="./assets/pet.svg" alt="Ícone de pets" />
+            <span class="closed">Pets</span>
+          </div>
+          <div class="option">
+            <img src="./assets/user.svg" alt="Ícone de clientes" />
+            <span class="closed">Clientes</span>
+          </div>
+          <div class="option">
+            <img src="./assets/vet.svg" alt="Ícone de veterinários" />
+            <span class="closed">Vets</span>
+          </div>
+          <div class="option">
+            <img src="./assets/settings.svg" alt="Ícone de ajustes" />
+            <span class="closed">Ajustes</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="bottom closed">
+          <img
+            src="./assets/photo.jpg"
+            alt="Imagem de perfil do Usuário"
+            class="profile closed"
+          />
+          <div class="user closed">
+            <p class="closed">Eleanor Pena</p>
+            <span class="closed">Veterinária</span>
+          </div>
+        </div>
+        <img src="./assets/log-out.svg" alt="Ícone de sair" />
+      </footer>
+    </aside>
+    <div class="dashboard">
+      <span>Dashboard</span>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
